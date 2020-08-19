@@ -39,7 +39,6 @@ class Phrase {
     showMatchedLetter(letter) {
         const li = document.querySelectorAll('#phrase ul li');
         for (let i = 0; i < li.length; i++) {
-            console.log(li[i].classList);
             if (li[i].classList.contains(letter)) {
                 li[i].classList.replace('hide', 'show');
             }
